@@ -256,7 +256,7 @@ const Sidebar = ()=> {
   try {
     submittedRef.current = true;
     toast.info('Saving your result....');
-    const res = await axios.post(`${API_BASE}api/results`,payload,{
+    const res = await axios.post(`${API_BASE}/api/results`,payload,{
         headers: {
             'Content-Type': 'application/json',
             ...getAuthHeader(),
