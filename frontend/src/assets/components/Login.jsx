@@ -59,6 +59,7 @@ const Login = ({onLoginSuccess = null}) => {
         );
         if(typeof onLoginSuccess === 'function') onLoginSuccess(user);
         navigate('/',{replace:true});
+        window.location.href = "https://quiz-app-frontend-0vrk.onrender.com/";
     } catch (err) {
         console.error('Login error:',err);
         setSubmitError("Network error");
