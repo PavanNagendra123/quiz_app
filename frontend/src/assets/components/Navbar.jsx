@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {navbarStyles} from '../dummyStyles.js';
 import {Link, NavLink, useNavigate} from 'react-router-dom';
 import { Award, LogIn, LogOut,Menu,X } from 'lucide-react';
+import logoSrc from '../channels4_profile.jpg';
 
 const Navbar = (logoSrc) => {
 
@@ -65,10 +66,7 @@ const  handleLogout = () =>{
           <Link to="/" className={navbarStyles.logoButton}>
             <div className={navbarStyles.logoInner}>
               <img
-                src={
-                  logoSrc ||
-                  "https://yt3.googleusercontent.com/eD5QJD-9uS--ekQcA-kDTCu1ZO4d7d7BTKLIVH-EySZtDVw3JZcc-bHHDOMvxys92F7rD8Kgfg=s900-c-k-c0x00ffffff-no-rj"
-                }
+                src={logoSrc}
                 alt="QuizMaster logo"
                 className={navbarStyles.logoImage}
               />
